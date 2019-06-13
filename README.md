@@ -4,7 +4,9 @@
 
 效果如下:
 
-<img src="https://github.com/zdc212133/DrawingBoard/blob/master/screenshot/one.png"/><img src="https://github.com/zdc212133/DrawingBoard/blob/master/screenshot/two.png"/>
+<p>
+<img src="https://github.com/zdc212133/DrawingBoard/blob/master/screenshot/one.png"/>
+<img src="https://github.com/zdc212133/DrawingBoard/blob/master/screenshot/two.png"/></p>
 
 核心代码如下：
 
