@@ -309,6 +309,7 @@ public class PaintView extends View implements CommUndo,Cloneable {
      */
     public void add(){
         clearAll(false);
+        handwriting.touchDown(currentX,currentY);
         resetHandwriting();
     }
 

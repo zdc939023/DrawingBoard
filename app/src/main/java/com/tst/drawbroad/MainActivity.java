@@ -1,6 +1,7 @@
 package com.tst.drawbroad;
 
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     PaintView paintView;
     ImageButton ib_pencil,ib_pen,ib_rudder,ib_color,ib_left,ib_right,ib_clear;
     ColorPickerDialog colorPickerDialog;
+    FloatingActionButton fabAdd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ib_right.setOnClickListener(this);
         ib_clear=findViewById(R.id.ib_clear);
         ib_clear.setOnClickListener(this);
+        fabAdd=findViewById(R.id.fab_add);
+        fabAdd.setOnClickListener(this);
         paintView.setCallBack(new PaintViewCallBack() {
             @Override
             public void onHasDraw() {
@@ -81,6 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.ib_clear:
                 clear();
                 break;
+            case R.id.fab_add:
+                addDraft();
+                break;
         }
     }
 
@@ -116,5 +123,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             paintView.clearAll(true);
             paintView.onHasDraw();
         }
+    }
+
+    private void addDraft(){
+        paintView.add();
+        paintView.setBackground(null);
+        paintView.onHasDraw();
+
     }
 }
