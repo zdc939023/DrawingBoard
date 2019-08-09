@@ -8,6 +8,20 @@
 <img src="https://github.com/zdc212133/DrawingBoard/blob/master/screenshot/one.png"/>
 <img src="https://github.com/zdc212133/DrawingBoard/blob/master/screenshot/two.png"/></p>
 
+使用方法：
+
+第一步
+    allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    
+第二步
+
+        implementation 'com.gitee.zdcUser:DrawingBoard:1.0.0'
+
 核心代码如下：
 
 ```
