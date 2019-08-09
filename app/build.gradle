@@ -1,9 +1,9 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.tst.drawbroad"
+//        applicationId "com.zdc.broad"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1

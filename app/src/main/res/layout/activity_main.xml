@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.zdc.broad.simple.MainActivity">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,12 +88,12 @@
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
-    <com.tst.drawbroad.PaintView
+    <com.zdc.broad.Drawing
         android:id="@+id/paintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".MainActivity"
+        tools:context="com.zdc.broad.simple.MainActivity"
         tools:showIn="@layout/activity_main" />
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_add"
