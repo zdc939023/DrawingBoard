@@ -283,7 +283,9 @@ public class Drawing extends View implements CommUndo,Cloneable {
         commCanvas.setBitmap(drawBitmap);
         createNewPen();
         handwriting.touchDown(x,y);
-        mCallBack.onTouchDown();
+        if (mCallBack!=null){
+            mCallBack.onTouchDown();
+        }
     }
 
     private void move(float x,float y){
