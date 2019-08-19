@@ -24,13 +24,10 @@
 
 + 1 在布局文件中添加引用
 ```
-    <com.tst.drawbroad.PaintView
+    <com.zdc.broad.Drawing
         android:id="@+id/paintView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".MainActivity"
-        tools:showIn="@layout/activity_main" />
+        android:layout_height="match_parent" />
 ```        
 
 + 2 在Activity中进行初始化,并添加撤销与反撤销的回调
